@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.sda</groupId>
+    <artifactId>sda-cluj15</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>java-advanced</module>
+        <module>jdbc</module>
+        <module>hibernate</module>
+        <module>fundamentals</module>
+        <module>testing-advanced</module>
+        <module>parent-boot-2</module>
+        <module>spring-boot-rest</module>
+        <module>spring-thymeleaf</module>
+    </modules>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+
+        <spring.version>5.2.9.RELEASE</spring.version>
+
+        <spring-data.version>2.3.4.RELEASE</spring-data.version>
+        <hibernate.version>5.4.22.Final</hibernate.version>
+        <h2.version>1.4.200</h2.version>
+        <mysql.version>8.0.18</mysql.version>
+
+        <jackson.version>2.11.2</jackson.version>
+
+        <junit.version>5.7.0</junit.version>
+        <junit-old.version>4.13</junit-old.version>
+        <assertj.version>3.17.2</assertj.version>
+        <mockito.version>3.5.13</mockito.version>
+        <hibernate-validator.version>6.1.0.Final</hibernate-validator.version>
+        <bootstrap.version>4.3.1</bootstrap.version>
+    </properties>
+
+    <dependencies>
+
+        <!-- testing framework -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- fluent assertions -->
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>${assertj.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- mocking framework -->
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>${mockito.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+</project>
