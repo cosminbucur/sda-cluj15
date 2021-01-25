@@ -1,0 +1,6 @@
+- [x] create entity
+- [x] map entity to table
+- [x] create relationship between objects
+- [x] implement repository
+- [x] configure hibernate
+- [x] write tests
